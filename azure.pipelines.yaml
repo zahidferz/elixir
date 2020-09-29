@@ -5,4 +5,10 @@ container:
   image: elixir:1.10.4
   
 steps:
-- script: ls
+- script: |
+    ls
+    echo "-----"
+    pwd
+
+- script: |
+    docker build .
