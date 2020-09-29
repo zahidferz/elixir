@@ -10,10 +10,10 @@ steps:
 
 - script: |
     ls
-    echo "-----"
-    pwd
   target: elixir
+  displayName: elixir
 
 - script: |
-    docker ps
+    ls
   target: host
+  displayName: host
