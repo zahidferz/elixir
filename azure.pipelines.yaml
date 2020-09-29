@@ -1,14 +1,18 @@
 pool:
   vmImage: 'ubuntu-18.04'
 
-container:
-  image: elixir:1.10.4
+resources:
+  containers:
+  - container: elixir
+    image: elixir:1.10.4
   
 steps:
+
 - script: |
     ls
     echo "-----"
     pwd
+  target: elixir
 
-- script: |
-    docker build .
+- task : docker ps
+  target: host
