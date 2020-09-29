@@ -4,10 +4,10 @@ pool:
 resources:
   containers:
   - container: elixir
-    image: elixir:1.10.4
+    image: elevacontainerregistry.azurecr.io/elixir
+    endpoint: docker-eleva
   
 steps:
-
 - script: |
     ls
   target: elixir
