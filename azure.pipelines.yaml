@@ -14,5 +14,6 @@ steps:
     pwd
   target: elixir
 
-- task : docker ps
+- script: |
+    docker ps
   target: host
