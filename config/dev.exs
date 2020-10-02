@@ -6,6 +6,7 @@ config :chain_business_management, ChainBusinessManagement.Repo,
   password: System.get_env("DB_PASSWORD"),
   database: System.get_env("DB_NAME"),
   hostname: System.get_env("DB_HOST"),
+  ssl: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
